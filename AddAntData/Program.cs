@@ -12,7 +12,7 @@ namespace AddAntData
     {
         public static string ws_start = DateTime.Now.ToString();
         public static string ws_end;
-        public static FCCEntities _db = new FCCEntities();
+        public static FCCEntities1 _db = new FCCEntities1();
         //_db = new FCCEntities()
 
         static void Main(string[] args)
@@ -32,11 +32,12 @@ namespace AddAntData
             foreach (string row in inputData.Split('\n'))
             {
                 rowCnt++;
-                am_ant_sys _am_ant_sys = new am_ant_sys();
+                
 
 
                 if (!string.IsNullOrEmpty(row))
                 {
+                    am_ant_sys _am_ant_sys = new am_ant_sys();
                     allFields = row.Split('|');
                     //Console.WriteLine(row);
                     _am_ant_sys.am_dom_status = allFields[0].ToString().Trim();
@@ -48,7 +49,9 @@ namespace AddAntData
                     // .. keep going till you get all 39 fields populated 
                     try
                     {
+                        //_db.am_ant_sys.Add(_am_ant_sys);
                         _db.am_ant_sys.Add(_am_ant_sys);
+
                         _db.SaveChanges();
                         rowInserted++;
                     }
@@ -58,23 +61,13 @@ namespace AddAntData
                         errCnt++;
                     }
                     finally
-                    {
-
+                    {                        
                     }
-
-
                 }
-
-
             }
-
-
-
-
-
+            //All is done with all records, let's drop the DATABASE connection
+            _db.Dispose();
             Console.WriteLine("EXIT");
-
-
 
         }
     }

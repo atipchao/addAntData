@@ -13,10 +13,10 @@ namespace AddAntData
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class FCCEntities : DbContext
+    public partial class FCCEntities1 : DbContext
     {
-        public FCCEntities()
-            : base("name=FCCEntities")
+        public FCCEntities1()
+            : base("name=FCCEntities1")
         {
         }
     

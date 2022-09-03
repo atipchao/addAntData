@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FCCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="am_ant_sys">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="am_dom_status" Type="varchar" MaxLength="50" />
+          <Property Name="ant_dir_ind" Type="varchar" MaxLength="50" />
+          <Property Name="ant_mode" Type="varchar" MaxLength="50" />
+          <Property Name="ant_sys_id" Type="varchar" MaxLength="50" />
+          <Property Name="application_id" Type="varchar" MaxLength="50" />
+          <Property Name="aug_count" Type="varchar" MaxLength="50" />
+          <Property Name="augmented_ind" Type="varchar" MaxLength="50" />
+          <Property Name="bad_data_switch" Type="varchar" MaxLength="50" />
+          <Property Name="biased_lat" Type="varchar" MaxLength="50" />
+          <Property Name="domestic_pattern" Type="varchar" MaxLength="50" />
+          <Property Name="dummy_data_switch" Type="varchar" MaxLength="50" />
+          <Property Name="efficiency_restricted" Type="varchar" MaxLength="50" />
+          <Property Name="efficiency_theoretical" Type="varchar" MaxLength="50" />
+          <Property Name="eng_record_type" Type="varchar" MaxLength="50" />
+          <Property Name="feed_circ_other" Type="varchar" MaxLength="50" />
+          <Property Name="feed_circ_type" Type="varchar" MaxLength="50" />
+          <Property Name="grandfathered_ind" Type="varchar" MaxLength="50" />
+          <Property Name="hours_operation" Type="varchar" MaxLength="50" />
+          <Property Name="lat_deg" Type="varchar" MaxLength="50" />
+          <Property Name="lat_dir" Type="varchar" MaxLength="50" />
+          <Property Name="lat_min" Type="varchar" MaxLength="50" />
+          <Property Name="lat_sec" Type="varchar" MaxLength="50" />
+          <Property Name="lat_whole_secs" Type="varchar" MaxLength="50" />
+          <Property Name="lon_deg" Type="varchar" MaxLength="50" />
+          <Property Name="lon_dir" Type="varchar" MaxLength="50" />
+          <Property Name="lon_min" Type="varchar" MaxLength="50" />
+          <Property Name="lon_sec" Type="varchar" MaxLength="50" />
+          <Property Name="lon_whole_secs" Type="varchar" MaxLength="50" />
+          <Property Name="mainkey" Type="varchar" MaxLength="50" />
+          <Property Name="power" Type="varchar" MaxLength="50" />
+          <Property Name="q_factor" Type="varchar" MaxLength="50" />
+          <Property Name="q_factor_custom_ind" Type="varchar" MaxLength="50" />
+          <Property Name="rms_augmented" Type="varchar" MaxLength="50" />
+          <Property Name="rms_standard" Type="varchar" MaxLength="50" />
+          <Property Name="rms_theoretical" Type="varchar" MaxLength="50" />
+          <Property Name="specified_hrs_range" Type="varchar" MaxLength="50" />
+          <Property Name="tower_count" Type="varchar" MaxLength="50" />
+          <Property Name="last_update_date" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="FCCModelStoreContainer">
+          <EntitySet Name="am_ant_sys" EntityType="Self.am_ant_sys" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FCCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="am_ant_sys">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="am_dom_status" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ant_dir_ind" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ant_mode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ant_sys_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="application_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="aug_count" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="augmented_ind" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="bad_data_switch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="biased_lat" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="domestic_pattern" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="dummy_data_switch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="efficiency_restricted" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="efficiency_theoretical" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="eng_record_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="feed_circ_other" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="feed_circ_type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="grandfathered_ind" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="hours_operation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lat_deg" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lat_dir" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lat_min" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lat_sec" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lat_whole_secs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lon_deg" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lon_dir" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lon_min" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lon_sec" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lon_whole_secs" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="mainkey" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="power" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="q_factor" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="q_factor_custom_ind" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="rms_augmented" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="rms_standard" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="rms_theoretical" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="specified_hrs_range" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="tower_count" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="last_update_date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="FCCEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="am_ant_sys" EntityType="Self.am_ant_sys" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FCCModelStoreContainer" CdmEntityContainer="FCCEntities1">
+          <EntitySetMapping Name="am_ant_sys">
+            <EntityTypeMapping TypeName="FCCModel.am_ant_sys">
+              <MappingFragment StoreEntitySet="am_ant_sys">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="am_dom_status" ColumnName="am_dom_status" />
+                <ScalarProperty Name="ant_dir_ind" ColumnName="ant_dir_ind" />
+                <ScalarProperty Name="ant_mode" ColumnName="ant_mode" />
+                <ScalarProperty Name="ant_sys_id" ColumnName="ant_sys_id" />
+                <ScalarProperty Name="application_id" ColumnName="application_id" />
+                <ScalarProperty Name="aug_count" ColumnName="aug_count" />
+                <ScalarProperty Name="augmented_ind" ColumnName="augmented_ind" />
+                <ScalarProperty Name="bad_data_switch" ColumnName="bad_data_switch" />
+                <ScalarProperty Name="biased_lat" ColumnName="biased_lat" />
+                <ScalarProperty Name="domestic_pattern" ColumnName="domestic_pattern" />
+                <ScalarProperty Name="dummy_data_switch" ColumnName="dummy_data_switch" />
+                <ScalarProperty Name="efficiency_restricted" ColumnName="efficiency_restricted" />
+                <ScalarProperty Name="efficiency_theoretical" ColumnName="efficiency_theoretical" />
+                <ScalarProperty Name="eng_record_type" ColumnName="eng_record_type" />
+                <ScalarProperty Name="feed_circ_other" ColumnName="feed_circ_other" />
+                <ScalarProperty Name="feed_circ_type" ColumnName="feed_circ_type" />
+                <ScalarProperty Name="grandfathered_ind" ColumnName="grandfathered_ind" />
+                <ScalarProperty Name="hours_operation" ColumnName="hours_operation" />
+                <ScalarProperty Name="lat_deg" ColumnName="lat_deg" />
+                <ScalarProperty Name="lat_dir" ColumnName="lat_dir" />
+                <ScalarProperty Name="lat_min" ColumnName="lat_min" />
+                <ScalarProperty Name="lat_sec" ColumnName="lat_sec" />
+                <ScalarProperty Name="lat_whole_secs" ColumnName="lat_whole_secs" />
+                <ScalarProperty Name="lon_deg" ColumnName="lon_deg" />
+                <ScalarProperty Name="lon_dir" ColumnName="lon_dir" />
+                <ScalarProperty Name="lon_min" ColumnName="lon_min" />
+                <ScalarProperty Name="lon_sec" ColumnName="lon_sec" />
+                <ScalarProperty Name="lon_whole_secs" ColumnName="lon_whole_secs" />
+                <ScalarProperty Name="mainkey" ColumnName="mainkey" />
+                <ScalarProperty Name="power" ColumnName="power" />
+                <ScalarProperty Name="q_factor" ColumnName="q_factor" />
+                <ScalarProperty Name="q_factor_custom_ind" ColumnName="q_factor_custom_ind" />
+                <ScalarProperty Name="rms_augmented" ColumnName="rms_augmented" />
+                <ScalarProperty Name="rms_standard" ColumnName="rms_standard" />
+                <ScalarProperty Name="rms_theoretical" ColumnName="rms_theoretical" />
+                <ScalarProperty Name="specified_hrs_range" ColumnName="specified_hrs_range" />
+                <ScalarProperty Name="tower_count" ColumnName="tower_count" />
+                <ScalarProperty Name="last_update_date" ColumnName="last_update_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
